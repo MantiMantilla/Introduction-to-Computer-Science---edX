@@ -7,10 +7,6 @@ def sign(num):
         return 0
 
 
-annualInterestRate = 0.18
-balance = 999999
-
-
 monthlyRate = annualInterestRate / 12
 
 
@@ -44,5 +40,5 @@ while n <= N:
         a = c
     else:
         b = c
-
-print(payment)
+format_float = "{:.2f}".format(payment)
+print("Lowest Payment:", format_float)
